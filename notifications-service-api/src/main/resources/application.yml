@@ -1,0 +1,33 @@
+app: # TODO Application configuration goes here
+
+spring:
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+
+
+# Spring Admin Actuators
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - auditevents
+        - beans
+        - conditions
+        - configprops
+        - flyway
+        - health
+        - httptrace
+        - info
+        - loggers
+        - liquibase
+        - metrics
+        - mappings
+        - scheduledtasks
+        - sessions
+        - threaddump
+        #- env            # Spring environment variables
+        #- shutdown       # Shutdown Service remotely
+  endpoint:
+    health:
+      show-details: ALWAYS

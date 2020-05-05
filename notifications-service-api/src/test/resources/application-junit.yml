@@ -1,0 +1,11 @@
+app:
+
+pace:
+  security:
+    oauth2:
+      client:
+        token-key-url: classpath:token-key.json
+
+spring:
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat

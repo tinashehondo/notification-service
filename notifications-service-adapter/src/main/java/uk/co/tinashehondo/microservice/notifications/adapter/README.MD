@@ -1,0 +1,1 @@
+Create various adapter implementations in directories under this directory

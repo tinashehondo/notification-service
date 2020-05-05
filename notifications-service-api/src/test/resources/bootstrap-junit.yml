@@ -1,0 +1,25 @@
+server:
+  port: 80 # Assign a port and register it here http://confluence.discsrv.co.za:8090/display/DN/Microservice+Ports
+
+spring:
+  application:
+    name: handyman-service
+
+  security:
+    user:
+      name: junit
+      password: junit
+  cloud:
+    config:
+      enabled: false
+      failFast: false
+      discovery:
+        enabled: false
+
+#Disable Discovery and Auto config for unit tests
+eureka:
+  client:
+    enabled: false
+
+encrypt:
+  key: junit

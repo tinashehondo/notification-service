@@ -1,0 +1,21 @@
+
+server:
+  port: 80 # Assign a port and register it here http://confluence.discsrv.co.za:8090/display/DN/Microservice+Ports
+
+spring:
+  application:
+    name: handyman-service
+  cloud:
+    config:
+      failFast: true
+      retry:
+        # retry intervals: 1s, 2s, 4s, 8s, 16s, 30s, 30s, 30s:
+        multiplier: 2.0
+        maxInterval: 30000
+        maxAttempts: 15
+      discovery:
+        enabled: true
+        serviceId: config-service
+
+
+

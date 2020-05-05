@@ -1,0 +1,15 @@
+target/
+.idea/
+.metadata
+.settings
+.classpath
+.project
+*.class
+*.iml
+*.uml
+.sonar_lock
+pid.txt
+.clover/
+node_modules/
+db_schema/
+package.json

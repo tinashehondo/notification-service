@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+  ~ Copyright Notice
+  ~ ================
+  ~ This file contains proprietary information of Discovery Health.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~ Copyright (c) 2018.
+  -->
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <!-- Exclude Generated Sources -->
+    <suppress checks="" files="[\\/]generated-sources[\\/]" />
+    <!--Exclude Clover instrumented sources-->
+    <suppress checks="" files="[\\/]src-instrumented[\\/]" />
+    <suppress checks="" files="[\\/]src-test-instrumented[\\/]" />
+</suppressions>
