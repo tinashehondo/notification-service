@@ -1,10 +1,9 @@
 
 server:
-  port: 80 # Assign a port and register it here http://confluence.discsrv.co.za:8090/display/DN/Microservice+Ports
-
+  port: 80
 spring:
   application:
-    name: handyman-service
+    name: notification-service
   cloud:
     config:
       failFast: true
