@@ -17,8 +17,9 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
     private final EmailRepository emailRepository;
     private final EmailResponseMapper emailResponseMapper;
     @Override
-    public EmailResponse sendEmailNotification(Email email) {
-        uk.co.tinashehondo.microservice.notifications.domain.entities.Email savedEmail = emailRepository.save(Mappers.EMAIL_MAPPER.dtoToDomain(email));
+    public EmailResponse sendEmailNotification(final Email email) {
+        final uk.co.tinashehondo.microservice.notifications.domain.entities.Email domainEmail = Mappers.EMAIL_MAPPER.dtoToDomain(email);
+        final uk.co.tinashehondo.microservice.notifications.domain.entities.Email savedEmail = emailRepository.save(domainEmail);
 
         //TODO impl sender
         return emailResponseMapper.apply(savedEmail) ;
