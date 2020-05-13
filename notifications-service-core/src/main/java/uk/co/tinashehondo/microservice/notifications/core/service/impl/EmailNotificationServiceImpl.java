@@ -7,8 +7,8 @@ import uk.co.tinashehondo.microservice.notifications.core.mapper.EmailResponseMa
 import uk.co.tinashehondo.microservice.notifications.core.mapper.Mappers;
 import uk.co.tinashehondo.microservice.notifications.core.service.EmailNotificationService;
 import uk.co.tinashehondo.microservice.notifications.domain.repositories.EmailRepository;
-import uk.co.tinashehondo.notifications.rest.model.Email;
-import uk.co.tinashehondo.notifications.rest.model.EmailResponse;
+import uk.co.tinashehondo.notification.rest.model.Email;
+import uk.co.tinashehondo.notification.rest.model.EmailResponse;
 
 @Slf4j
 @Service

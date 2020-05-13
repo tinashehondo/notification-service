@@ -5,6 +5,6 @@ import uk.co.tinashehondo.microservice.notifications.domain.entities.Email;
 
 @Mapper
 public interface EmailMapper {
-    Email dtoToDomain(uk.co.tinashehondo.notifications.rest.model.Email email);
-    uk.co.tinashehondo.notifications.rest.model.Email domainToDto(Email email);
+    Email dtoToDomain(uk.co.tinashehondo.notification.rest.model.Email email);
+    uk.co.tinashehondo.notification.rest.model.Email domainToDto(Email email);
 }

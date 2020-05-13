@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.cors.CorsConfiguration;
 import uk.co.tinashehondo.microservice.notifications.core.service.EmailNotificationService;
-import uk.co.tinashehondo.notifications.rest.api.NotificationApi;
-import uk.co.tinashehondo.notifications.rest.model.Email;
-import uk.co.tinashehondo.notifications.rest.model.EmailResponse;
-import uk.co.tinashehondo.notifications.rest.model.Sms;
-import uk.co.tinashehondo.notifications.rest.model.SmsResponse;
+import uk.co.tinashehondo.notification.rest.api.NotificationApi;
+import uk.co.tinashehondo.notification.rest.model.Email;
+import uk.co.tinashehondo.notification.rest.model.EmailResponse;
+//import uk.co.tinashehondo.notification.rest.model.Sms;
+//import uk.co.tinashehondo.notification.rest.model.SmsResponse;
 
 import javax.validation.Valid;
 
@@ -25,10 +25,10 @@ import javax.validation.Valid;
 public class EmailNotificationsController implements NotificationApi {
 
     private final EmailNotificationService emailNotificationService;
-    @Override
-    public ResponseEntity<EmailResponse> getEmailNotification() {
-        return null;
-    }
+//    @Override
+//    public ResponseEntity<EmailResponse> getEmailNotification() {
+//        return null;
+//    }
 
     @Override
     public ResponseEntity<EmailResponse> sendEmailNotification(@Valid Email email) {

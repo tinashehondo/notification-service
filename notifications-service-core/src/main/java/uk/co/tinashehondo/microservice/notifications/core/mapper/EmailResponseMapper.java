@@ -3,7 +3,7 @@ package uk.co.tinashehondo.microservice.notifications.core.mapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import uk.co.tinashehondo.microservice.notifications.domain.entities.Email;
-import uk.co.tinashehondo.notifications.rest.model.EmailResponse;
+import uk.co.tinashehondo.notification.rest.model.EmailResponse;
 
 import java.util.function.Function;
 
