@@ -21,8 +21,17 @@ public class EmailNotificationServiceImpl implements EmailNotificationService {
         final uk.co.tinashehondo.microservice.notifications.domain.entities.Email domainEmail = Mappers.EMAIL_MAPPER.dtoToDomain(email);
         final uk.co.tinashehondo.microservice.notifications.domain.entities.Email savedEmail = emailRepository.save(domainEmail);
 
+        testC();
         //TODO impl sender
         return emailResponseMapper.apply(savedEmail) ;
+
+    }
+
+    private String testC(){
+        System.out.println("asfasafagfafa");
+        int x = 10;
+        x++;
+        return "";
     }
 
 
