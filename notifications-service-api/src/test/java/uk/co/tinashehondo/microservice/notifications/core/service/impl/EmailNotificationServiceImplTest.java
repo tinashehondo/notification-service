@@ -9,7 +9,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import uk.co.tinashehondo.microservice.notifications.core.mapper.EmailResponseMapper;
 import uk.co.tinashehondo.microservice.notifications.domain.entities.Email;
 import uk.co.tinashehondo.microservice.notifications.domain.repositories.EmailRepository;
-import uk.co.tinashehondo.notifications.rest.model.EmailResponse;
+import uk.co.tinashehondo.notification.rest.model.EmailResponse;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -44,7 +44,7 @@ private EmailNotificationServiceImpl emailNotificationServiceImpl;
         when(emailRepository.save(any())).thenReturn(savedEmail);
         when(emailResponseMapper.apply(any())).thenReturn(emailResponse);
        //when(emailMapper.dtoToDomain(any())).thenReturn(new Email());
-        uk.co.tinashehondo.notifications.rest.model.Email emailRequest = new uk.co.tinashehondo.notifications.rest.model.Email();
+        uk.co.tinashehondo.notification.rest.model.Email emailRequest = new uk.co.tinashehondo.notification.rest.model.Email();
         emailRequest.sender(savedEmail.getSender());
         emailRequest.receiver(savedEmail.getReceiver());
         //act
