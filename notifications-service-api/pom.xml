@@ -21,7 +21,12 @@
             <artifactId>notifications-service-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Spring Cloud -->
         <dependency>
