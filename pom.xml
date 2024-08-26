@@ -41,7 +41,7 @@
 
         <!-- 3rd party -->
         <lombok.version>1.18.8</lombok.version>
-        <io.springfox.version>2.9.2</io.springfox.version>
+        <io.springfox.version>2.10.0</io.springfox.version>
         <com.oracle.ojdbc7.version>12.2.0.1</com.oracle.ojdbc7.version>
         <logbook-spring-boot-starter.version>1.9.0</logbook-spring-boot-starter.version>
 
